@@ -3,21 +3,7 @@
 #include <WiFi.h>
 #include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
-// #include <WebServer.h>  // If you're using WebServer separately
-// #include <http_parser.h>  // Optional: If still needed
-
-// Prevent HTTP method redefinitions
-#undef HTTP_GET
-#undef HTTP_POST
-#undef HTTP_DELETE
-#undef HTTP_PUT
-#undef HTTP_HEAD
-#undef HTTP_OPTIONS
-#undef HTTP_PATCH
-
-// #include <ElegantOTA.h>
 #include <AsyncElegantOTA.h>
-
 
 #define DEST_FS_USES_SD
 #include <ESP32-targz.h>
